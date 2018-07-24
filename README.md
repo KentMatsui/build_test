@@ -15,3 +15,6 @@ $ npm run watch
 
 $ npm run build
 → 本番環境ようにビルド
+
+control + c
+→ タスクランナーの停止
