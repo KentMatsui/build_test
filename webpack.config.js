@@ -1,9 +1,11 @@
-var path = require('path'),
+var glob = require("glob"),
+    entries = glob.sync("./asset/src/js/*.js"),
+    path = require('path'),
     ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = [
   {
-    entry: __dirname + "/asset/src/js/app.js", //ビルドするファイル
+    entry: entries, //ビルドするファイル
     output: {
       path: __dirname +'/asset/js', //ビルドしたファイルを吐き出す場所
       filename: 'app.js' //ビルドした後のファイル名

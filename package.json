@@ -35,6 +35,8 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "ajv": "^6.5.2",
+    "glob": "^7.1.2",
     "npm-check-updates": "^2.14.2"
   }
 }
