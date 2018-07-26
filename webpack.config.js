@@ -1,11 +1,12 @@
 var glob = require("glob"),
-    entries = glob.sync("./asset/src/js/*.js"),
+    entriesJs = glob.sync("./asset/src/js/*.js"),
+    entriesSass = glob.sync("./asset/src/sass/*.scss"),
     path = require('path'),
     ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = [
   {
-    entry: entries, //ビルドするファイル
+    entry: entriesJs, //ビルドするファイル
     output: {
       path: __dirname +'/asset/js', //ビルドしたファイルを吐き出す場所
       filename: 'app.js' //ビルドした後のファイル名
@@ -25,9 +26,8 @@ module.exports = [
     }
   },
   {
-    context: path.join(__dirname, 'asset/src/sass'),
     entry: {
-      style: './style.scss'
+      style: entriesSass
     },
     output: {
       path: path.join(__dirname, 'asset/css'),

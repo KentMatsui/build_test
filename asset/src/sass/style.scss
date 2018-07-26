@@ -1,21 +1,4 @@
 @charset "utf-8";
-@import url('http://fonts.googleapis.com/earlyaccess/notosansjp.css');
-
-
-
-
-
-/* Preset
--------------------------------------------------------
--------------------------------------------------------*/
-
-$mg: 'Noto Sans JP',"游ゴシック体",Yu Gothic,YuGothic,"ヒラギノ角ゴ Pro",Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,sans-serif;
-$mgc: #222;
-$wh: #fff;
-
-/* End Preset
--------------------------------------------------------
--------------------------------------------------------*/
 
 
 
@@ -25,58 +8,11 @@ $wh: #fff;
 -------------------------------------------------------
 -------------------------------------------------------*/
 
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-    list-style: none;
-
-    &::selection {
-        color: $wh;
-        background-color: $mgc;
-    }
-}
-
 html {
-    font-size: 62.5%;
+    font-size: 200%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     height: 100%;
-}
-
-body {
-    font-family: $mg;
-	  font-size: 12px;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    @media (min-width: 768px) {
-        font-size: 13px;
-        font-size: 1.3rem;
-    }
-}
-
-h1,h2,h3,h4,h5 {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    background-color: transparent;
-    pointer-events: auto;
-}
-
-p,ul,li,dl,dd {
-    margin: 0;
-    padding: 0;
-    outline: 0;
 }
 
 /* End Base
